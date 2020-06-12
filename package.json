@@ -4,6 +4,9 @@
   "description": "Server used to send data to where-to-drop.com",
   "main": "server.js",
   "author": "Gaston Aganza",
+  "scripts": {
+    "start": "node src/server.js"
+  },
   "dependencies": {
     "discord.js": "^12.2.0",
     "express": "^4.17.1"
