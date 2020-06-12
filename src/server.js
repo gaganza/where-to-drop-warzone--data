@@ -5,10 +5,12 @@ const port = 3000;
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+let auth;
+
 try {
-  const auth = require("./auth.json");
+  auth = require("./auth.json");
 } catch (error) {
-  const auth = { token: process.env.TOKEN };
+  auth = { token: process.env.TOKEN };
 }
 
 client.login(auth.token);
