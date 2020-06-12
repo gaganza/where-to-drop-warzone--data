@@ -31,9 +31,9 @@ app.get("/bot-info", (req, res, next) => {
   let users = data["users"];
 
   res.send({
-    guilds_count: guilds.length,
-    channels_count: channels.length,
-    users_count: users.length,
+    guild_count: guilds.length,
+    channel_count: channels.length,
+    user_count: users.length,
   });
 });
 
