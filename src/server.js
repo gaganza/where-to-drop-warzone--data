@@ -1,12 +1,11 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
 let auth;
-
 try {
   auth = require("./auth.json");
 } catch (error) {
